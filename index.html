@@ -1,76 +1,129 @@
-<!-- Scope of Services -->
-<section class="p-6 md:p-10 bg-white">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK Multispeciality Clinic | Tiruvallur</title>
 
-    <!-- Title -->
-    <div class="text-center mb-10">
-        <h2 class="inline-block px-6 py-3 rounded-full text-white text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 shadow">
-            Scope of Services
-        </h2>
-    </div>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Grid -->
-    <div class="grid md:grid-cols-2 gap-8">
+    <!-- Tailwind CDN (okay for now, but consider building locally for production) -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- Dermatology -->
-        <div>
-            <h3 class="text-white text-center font-semibold text-lg mb-4 py-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600">
-                Dermatology
-            </h3>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .accent-bg { background-color: #0d9488; }
+        .accent-text { color: #0f766e; }
+        .secondary-bg { background-color: #334155; }
+    </style>
+</head>
 
-            <div class="bg-gradient-to-br from-blue-100 to-blue-50 p-6 rounded-2xl shadow-sm">
-                <ul class="space-y-2 text-gray-700 text-sm md:text-base list-disc pl-5">
-                    <li>Acne & acne scar revision</li>
-                    <li>Keloid & hypertrophic scar</li>
-                    <li>Fungal skin infection</li>
-                    <li>Warts & corn removal</li>
-                    <li>Skin tag, DPN, cyst & mole excision</li>
-                    <li>Psoriasis</li>
-                    <li>Lichen planus</li>
-                    <li>Vitiligo</li>
-                    <li>Eczema & atopic dermatitis</li>
-                    <li>Hair loss</li>
-                    <li>Nail disorders</li>
-                    <li>Melasma & pigmentary disorders</li>
-                    <li>Urticaria</li>
-                    <li>Cutaneous vasculitis</li>
-                    <li>Pediatric skin diseases</li>
-                    <li>Radiosurgery</li>
-                    <li>Chemical peels</li>
-                    <li>Microneedling</li>
-                </ul>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <main class="max-w-5xl w-full bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 border-teal-600">
+
+        <!-- Header -->
+        <header class="p-6 md:p-8 flex flex-col md:flex-row justify-between items-center gap-6 border-b">
+
+            <div class="flex items-center gap-4 text-center md:text-left">
+                <div class="w-14 h-14 accent-bg rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                    VK
+                </div>
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold text-gray-800">
+                        VK Multispeciality Clinic
+                    </h1>
+                    <p class="text-teal-600 text-sm md:text-base">
+                        Integrated Care for Mind & Body
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- Psychiatry -->
-        <div>
-            <h3 class="text-white text-center font-semibold text-lg mb-4 py-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600">
-                Psychiatry
-            </h3>
-
-            <div class="bg-gradient-to-br from-purple-100 to-blue-50 p-6 rounded-2xl shadow-sm">
-                <ul class="space-y-2 text-gray-700 text-sm md:text-base list-disc pl-5">
-                    <li>Depression</li>
-                    <li>Anxiety</li>
-                    <li>OCD</li>
-                    <li>Alcohol de-addiction</li>
-                    <li>Tobacco de-addiction</li>
-                    <li>Bipolar Affective Disorder</li>
-                    <li>Schizophrenia</li>
-                    <li>Stress, burnout & PTSD</li>
-                    <li>Suicidal thoughts</li>
-                    <li>Dissociation</li>
-                    <li>Intellectual disability</li>
-                    <li>ADHD</li>
-                    <li>Autism</li>
-                    <li>Bed wetting</li>
-                    <li>Insomnia / sleep issues</li>
-                    <li>Marital issues</li>
-                    <li>Adolescent emotional problems</li>
-                    <li>Sexual problems</li>
-                </ul>
+            <!-- Timings -->
+            <div class="bg-gray-50 border rounded-xl px-4 py-3 text-center md:text-left">
+                <p class="text-xs font-bold uppercase text-gray-500">Clinic Timings</p>
+                <p class="text-sm font-semibold text-gray-700">
+                    Mon - Sat: 5:00 PM - 9:00 PM
+                </p>
+                <p class="text-xs text-gray-400">Closed on Sundays</p>
             </div>
-        </div>
 
-    </div>
+        </header>
 
-</section>
+        <!-- Services -->
+        <section class="grid md:grid-cols-2 gap-6 p-6 md:p-8 bg-gray-50">
+
+            <!-- Psychiatry -->
+            <article class="bg-white rounded-xl p-5 shadow-sm border hover:shadow-md transition">
+                <h2 class="text-lg font-bold accent-text mb-2">
+                    🧠 Psychiatry & Mental Health
+                </h2>
+                <p class="text-xs text-gray-500 mb-4 uppercase">
+                    Diagnosis • Therapy • Medication Management
+                </p>
+                <img src="https://via.placeholder.com/600x300"
+                     alt="Psychiatry Services"
+                     class="rounded-lg w-full object-cover">
+            </article>
+
+            <!-- Dermatology -->
+            <article class="bg-white rounded-xl p-5 shadow-sm border hover:shadow-md transition">
+                <h2 class="text-lg font-bold accent-text mb-2">
+                    ✨ Dermatology & Skin Care
+                </h2>
+                <p class="text-xs text-gray-500 mb-4 uppercase">
+                    Acne Treatment • Aesthetic Services • Medical Care
+                </p>
+                <img src="https://via.placeholder.com/600x300"
+                     alt="Dermatology Services"
+                     class="rounded-lg w-full object-cover">
+            </article>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="secondary-bg text-white p-6 md:p-8">
+
+            <div class="grid md:grid-cols-3 gap-6 items-center text-center md:text-left">
+
+                <!-- Address -->
+                <div>
+                    <p class="text-xs uppercase text-gray-400 mb-1">Address</p>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        No 24, Ground Floor, KVR Complex,<br>
+                        Mothilal Street, Near Therady,<br>
+                        Tiruvallur, Tamil Nadu 602001
+                    </p>
+                </div>
+
+                <!-- Map QR -->
+                <div class="flex flex-col items-center">
+                    <p class="text-xs text-gray-400 mb-2">Location</p>
+                    <a href="https://maps.app.goo.gl/YourLinkHere" target="_blank">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://maps.app.goo.gl/YourLinkHere"
+                             alt="QR Code for Location"
+                             class="bg-white p-1 rounded">
+                    </a>
+                </div>
+
+                <!-- Contact -->
+                <div class="text-center md:text-right">
+                    <p class="text-xs uppercase text-gray-400">Appointment</p>
+                    <a href="tel:+916380636676"
+                       class="text-xl md:text-2xl font-bold hover:text-teal-400">
+                        +91 6380636676
+                    </a>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
